@@ -81,6 +81,10 @@ body {
     padding: 10px;
 }
 
+.seperation {
+    display: none;
+}
+
 .home {
     display: none;
 }
@@ -672,9 +676,12 @@ form > textarea {
     }
     
     .about-shop-img-div {
-        margin-top: 20%;
+        display: flex;
+        margin-top: 15%;
         margin-bottom: 0;
         max-width: 800px;
+        justify-content: center;
+        align-items: center;
     }
     
     .about-shop-text-div {
@@ -688,10 +695,6 @@ form > textarea {
     
     .about-shop-text-div > p {
         margin: 10%;
-    }
-    
-    .about-store-img {
-        max-width: 600px;
     }
 
     /* Testimonials */
@@ -809,11 +812,37 @@ form > textarea {
 }
 
 @media screen and (min-width: 800px) {
-    
-    .top-bar-text {
+
+    .top-bar-container {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         width: 1000px;
+        margin: auto;
     }
+
+    .top-bar-text {
+        width: 500px;
+        padding: 0;
+    }
+
+    .home {
+        display: flex;
+    }
+
+    .home > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0px 20px;
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .seperation {
+        display: block;
+    }
+
     .header-content {
         width: 1000px;
         padding-left: 10%;
@@ -1094,11 +1123,13 @@ form > textarea {
 
     .info-container {
         display: grid;
-        grid-template-columns: 30% 20% 50%;
+        grid-template-columns: 30% 50%;
         grid-template-rows: 10% 50% 30%;
         max-width: 1000px;
         height: 650px;
         margin: auto;
+        padding: 0 10% 0 10%;
+        gap: 0% 20%;
     }
 
     .corp-container {
@@ -1124,8 +1155,12 @@ form > textarea {
     }
 
     .contact-container {
-        grid-column: 3;
+        grid-column: 2;
         grid-row: 2/3;
+    }
+
+    .contact {
+        margin: 0;
     }
 
     .footer-text {
@@ -1136,5 +1171,6 @@ form > textarea {
         max-width: 900px;
         margin-top: 25px;
         margin-bottom: 20px;
+        padding: 0 50px 0 50px;
     }
 }
