@@ -869,7 +869,7 @@ form > textarea {
     }
 
     #myLinks {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         max-width: 90%;
     }
